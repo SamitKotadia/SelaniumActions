@@ -34,13 +34,13 @@ public class FileAttachEmail {
         driver.findElement(By.id("passwordNext")).click();
 
         driver.findElement(By.xpath("//div[@class='T-I J-J5-Ji T-I-KE L3']")).click();
-        driver.findElement(By.xpath("//div[@class='wO nr l1']//textarea")).sendKeys("nareshkhunt@yahoo.co.in");
+        driver.findElement(By.xpath("//div[@class='wO nr l1']//textarea")).sendKeys("samit@yahoo.co.in");
         driver.findElement(By.name("subjectbox")).sendKeys("Test File Upload");
         WebElement fileInput = driver.findElement(By.xpath("//div[@class='a1 aaA aMZ']"));
         fileInput.click();
 
-       StringSelection ss = new StringSelection("C:\\Users\\nares\\Desktop\\testfile.txt");
-       // StringSelection ss = new StringSelection("C:\\Users\\nares\\Desktop\\EggPlant.docx");
+       StringSelection ss = new StringSelection("C:\\Users\\Desktop\\testfile.txt");
+       // StringSelection ss = new StringSelection("C:\\Users\\Desktop\\EggPlant.docx");
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
 
         // Ctrl + v
